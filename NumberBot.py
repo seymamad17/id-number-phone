@@ -3,7 +3,7 @@ from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 TOKEN = '7682398662:AAHagt611VPm7RmLLmGxdmaYdYPtHJbMp04'
-MY_CHAT_ID = '5840672291'
+MY_CHAT_ID = '7507284671'
 CHANNEL_1 = '@Good_APK_01'
 CHANNEL_2 = '@illega_APK'
 
