@@ -82,14 +82,15 @@ async def handle_contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("لطفاً از دکمه‌ی ارسال شماره استفاده کن.")
 
 # اجرای اصلی ربات
-async def main():
+def main():
     print("✅ ربات در حال اجراست...")
     app = Application.builder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.CONTACT, handle_contact))
 
-    await app.run_polling()
+    app.run_polling()
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    main()
+
